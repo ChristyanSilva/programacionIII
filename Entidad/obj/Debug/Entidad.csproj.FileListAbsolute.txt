@@ -1,0 +1,12 @@
+C:\Users\Netbook-HP\source\repos\Facturacion de Taxis\Entidad\bin\Debug\Entidad.dll
+C:\Users\Netbook-HP\source\repos\Facturacion de Taxis\Entidad\bin\Debug\Entidad.pdb
+C:\Users\Netbook-HP\source\repos\Facturacion de Taxis\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
+C:\Users\Netbook-HP\source\repos\Facturacion de Taxis\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Netbook-HP\source\repos\Facturacion de Taxis\Entidad\obj\Debug\Entidad.dll
+C:\Users\Netbook-HP\source\repos\Facturacion de Taxis\Entidad\obj\Debug\Entidad.pdb
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\bin\Debug\Entidad.dll
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\bin\Debug\Entidad.pdb
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\obj\Debug\Entidad.dll
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\obj\Debug\Entidad.pdb

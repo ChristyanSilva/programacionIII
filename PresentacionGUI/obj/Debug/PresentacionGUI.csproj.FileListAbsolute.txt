@@ -1,0 +1,35 @@
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\PresentacionGUI.exe.config
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\PresentacionGUI.exe
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\PresentacionGUI.pdb
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.AssemblyReference.cache
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.Formprincipal.resources
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.Properties.Resources.resources
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.GenerateResource.cache
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CoreCompileInputs.cache
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.exe
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.FormConsultaVehiculo.resources
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.FormRegistroVehiculo.resources
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.FormRegistroConductor.resources
+C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.FormConsultaConductor.resources
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\PresentacionGUI.exe.config
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\PresentacionGUI.exe
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\PresentacionGUI.pdb
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\Entidad.dll
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\Logica.dll
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\Datos.dll
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\Entidad.pdb
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\Logica.pdb
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\bin\Debug\Datos.pdb
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.AssemblyReference.cache
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.FormVehiculo.resources
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.FormPrincipal.resources
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.FormConductor.resources
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.Properties.Resources.resources
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.GenerateResource.cache
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CoreCompileInputs.cache
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CopyComplete
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.exe
+C:\Users\POWER I5\Desktop\Facturacion de Taxis\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
