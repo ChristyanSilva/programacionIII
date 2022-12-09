@@ -20,6 +20,7 @@ namespace PresentacionGUI
             InitializeComponent();
         }
 
+        
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -43,6 +44,7 @@ namespace PresentacionGUI
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            /*
             if (txtmarca.Text.Trim() == "")
             {
                 MessageBox.Show("todos los campos son obligatorios");
@@ -77,10 +79,12 @@ namespace PresentacionGUI
                     MessageBox.Show(ex.Message);
                 }
             }
+            */
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            /*
             if (txtplaca.Text.Trim() == "")
             {
                 MessageBox.Show("por favor ingrese la placa del vehiculo a consultar");
@@ -107,10 +111,12 @@ namespace PresentacionGUI
                     consultado = true;
                 }
             }
+            */
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            /*
             if (consultado == false)
             {
                 MessageBox.Show("Debe consultar el vehiculo");
@@ -148,10 +154,12 @@ namespace PresentacionGUI
                     MessageBox.Show(ex.Message);
                 }
             }
+            */
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            /*
             if (txtplaca.Text.Trim() == "")
             {
                 MessageBox.Show("El campos es obligatorio");
@@ -178,9 +186,11 @@ namespace PresentacionGUI
                 }
 
             }
+            */
         }
         public void LlenarGrid()
         {
+            /*
             DataTable datos = VehiculoCAD.listar();
             if (datos == null)
             {
@@ -190,6 +200,7 @@ namespace PresentacionGUI
             {
                 listaVehiculos.DataSource = datos.DefaultView;
             }
+            */
         }
 
         public void LimparCampos()

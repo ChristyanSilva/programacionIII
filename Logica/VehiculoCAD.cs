@@ -12,6 +12,7 @@ namespace Logica
 {
     public class VehiculoCAD
     {
+        /*
         public static bool Guardardb(Vehiculo v)
         {
             try
@@ -144,6 +145,6 @@ namespace Logica
                 return false;
             }
         }
-
+        */
     }
 }

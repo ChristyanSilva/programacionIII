@@ -18,6 +18,7 @@ namespace PresentacionGUI
         public FormConductor()
         {
             InitializeComponent();
+            LlenarGrid();
         }
 
         private void dtFecha_ValueChanged(object sender, EventArgs e)
@@ -60,13 +61,12 @@ namespace PresentacionGUI
                     co.apellido = txtApellido.Text.Trim().ToUpper();
                     co.fechaNacimiento = dtFecha.Value.Year+"-"+dtFecha.Value.Month+"-"+dtFecha.Value.Day;
                     co.aniosdeExperiencia = Convert.ToInt32(anioexp.Text.Trim());
-                    ConductorCAD.Guardardb(co);
                     if (ConductorCAD.Guardardb(co))
                     {
                         LlenarGrid();
-                        LimparCampos();
+                        LimpiarCampos();
                         MessageBox.Show("El conductor se ha guardado correctamente");
-                        consultado = false; 
+                        //consultado = false; 
                     }
                     else
                     {
@@ -89,20 +89,22 @@ namespace PresentacionGUI
             this.Close();   
         }
 
+        
         public void LlenarGrid()
         {
             DataTable datos = ConductorCAD.listar();
-            if (datos== null)
+            if (datos == null)
             {
                 MessageBox.Show("no se logro acceder a los datos");
             }
             else
             {
-                listaConductores.DataSource = datos.DefaultView; 
+                listaConductores.DataSource = datos; 
             }
         }
 
-        public void LimparCampos()
+        
+        public void LimpiarCampos()
         {
             txtNombre.Text = "";
             txtApellido.Text = "";
@@ -110,6 +112,7 @@ namespace PresentacionGUI
             anioexp.Text = "";
         }
 
+        /*
         private void FormConductor_Load(object sender, EventArgs e)
         {
             LlenarGrid();
@@ -213,5 +216,6 @@ namespace PresentacionGUI
                 }
             }
         }
+        */
     }
 }

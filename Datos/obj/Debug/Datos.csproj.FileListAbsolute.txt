@@ -42,3 +42,12 @@ C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Datos\obj\Debug\Datos.csproj.Core
 C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Datos\obj\Debug\Datos.dll
 C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Datos\obj\Debug\Datos.pdb
+C:\Users\yahik\Source\Repos\programacionIII\Datos\bin\Debug\Datos.dll
+C:\Users\yahik\Source\Repos\programacionIII\Datos\bin\Debug\Datos.pdb
+C:\Users\yahik\Source\Repos\programacionIII\Datos\bin\Debug\Entidad.dll
+C:\Users\yahik\Source\Repos\programacionIII\Datos\bin\Debug\Entidad.pdb
+C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.dll
+C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.pdb

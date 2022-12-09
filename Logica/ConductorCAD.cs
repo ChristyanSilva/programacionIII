@@ -18,48 +18,56 @@ namespace Datos
         {
             try
             {
-                Conexion con= new Conexion();
-                con.conectar();
-                string sql = "INSERT INTO conductores (nombres, apellidos, fechanacimiento, añoexp) VALUES ('" + c.nombre+ "','"+c.apellido+"','"+c.fechaNacimiento+"',"+c.aniosdeExperiencia+")";
-                SqlCommand comando = new SqlCommand(sql);
-                int cantidad = comando.ExecuteNonQuery();
-                if(cantidad==1)
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
+                // SQL Comando
+                string queryText = "INSERT INTO conductores (nombres, apellidos, " +
+                    "fechanacimiento, anioexp) VALUES ('" + c.nombre + "','" + c.apellido +
+                    "','" + c.fechaNacimiento + "'," + c.aniosdeExperiencia + ")";
+                DbCommand newCommand = new SqlCommand(queryText);
+                newCommand.Connection = sqlServerConnection.dbConnection;
+                int cantidad = newCommand.ExecuteNonQuery();
+                sqlServerConnection.Desconectar();
+                
+                if (cantidad==1)
                 {
-                    con.desconectar();
                     return true;
                 }else
                 {
-                    con.desconectar();
                     return false;
                 }                  
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 return false;
             }
         }
 
+        
         public static DataTable listar()
         {
             try
             {
-                Conexion con = new Conexion();
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
                 string sql = "SELECT * from conductores;";
-                SqlCommand comando = new SqlCommand(sql, con.conectar());
+                SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 SqlDataReader dataReader = comando.ExecuteReader(CommandBehavior.CloseConnection);
                 DataTable dataTable = new DataTable();
                 dataTable.Load(dataReader);
 
-                con.desconectar();
+                sqlServerConnection.Desconectar();
                 return dataTable;
             }
 
-            catch (Exception ex)
+            catch (Exception)
             {
                 return null;
             }
 
         }
+
+        /*
         public static Conductor Consultar(string nombre, string apellido)
         {
             try
@@ -143,5 +151,6 @@ namespace Datos
                 return false;
             }
         }
+        */
     }
 }

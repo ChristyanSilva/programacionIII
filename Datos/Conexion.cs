@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,30 +12,21 @@ namespace Datos
 {
     public class Conexion
     {
-        SqlConnection con;
+        public SqlConnection dbConnection;
 
         public Conexion()
         {
-            con = new SqlConnection("Data Source= DESKTOP-MS21OKB\\SQLEXPRESS; Initial Catalog= tax-manager; Integrated Security= True");
+            dbConnection = new SqlConnection("Data Source=DESKTOP-IVBU7DH;Initial Catalog=SILVADB;Integrated Security=True");
         }
 
-        public SqlConnection conectar()
+        public void Conectar()
         {
-                con.Open();
-                return con;
+            dbConnection.Open();
         }
 
-        public bool desconectar()
+        public void Desconectar()
         {
-            try
-            {
-                con.Close();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            dbConnection.Close();
         }
 
     }   

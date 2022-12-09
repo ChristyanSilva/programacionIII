@@ -10,3 +10,9 @@ C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\obj\Debug\Entidad.csproj.
 C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\obj\Debug\Entidad.dll
 C:\Users\CRISTIAN\Desktop\Facturacion de Taxis\Entidad\obj\Debug\Entidad.pdb
+C:\Users\yahik\Source\Repos\programacionIII\Entidad\bin\Debug\Entidad.dll
+C:\Users\yahik\Source\Repos\programacionIII\Entidad\bin\Debug\Entidad.pdb
+C:\Users\yahik\Source\Repos\programacionIII\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
+C:\Users\yahik\Source\Repos\programacionIII\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\yahik\Source\Repos\programacionIII\Entidad\obj\Debug\Entidad.dll
+C:\Users\yahik\Source\Repos\programacionIII\Entidad\obj\Debug\Entidad.pdb

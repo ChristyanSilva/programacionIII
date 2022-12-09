@@ -47,10 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabGeneral = new System.Windows.Forms.TabPage();
             this.listaConductores = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPersonales.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -119,7 +115,6 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "ELIMINAR";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // anioexp
             // 
@@ -136,7 +131,6 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "ACTUALIZAR";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtApellido
             // 
@@ -153,7 +147,6 @@
             this.consultaconductor.TabIndex = 3;
             this.consultaconductor.Text = "CONSULTAR";
             this.consultaconductor.UseVisualStyleBackColor = true;
-            this.consultaconductor.Click += new System.EventHandler(this.consultaconductor_Click);
             // 
             // label4
             // 
@@ -234,36 +227,11 @@
             this.listaConductores.AllowUserToResizeRows = false;
             this.listaConductores.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.listaConductores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listaConductores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
             this.listaConductores.Location = new System.Drawing.Point(6, 3);
             this.listaConductores.Name = "listaConductores";
             this.listaConductores.Size = new System.Drawing.Size(440, 293);
             this.listaConductores.TabIndex = 0;
             this.listaConductores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrillaFamiliar_CellContentClick_1);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nombres";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Apellidos";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Fecha de Nacimiento";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Años de Experiencia";
-            this.Column4.Name = "Column4";
             // 
             // FormConductor
             // 
@@ -278,7 +246,6 @@
             this.Name = "FormConductor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conductores";
-            this.Load += new System.EventHandler(this.FormConductor_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPersonales.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -308,10 +275,6 @@
         private System.Windows.Forms.TabPage tabGeneral;
         private System.Windows.Forms.Button consultaconductor;
         private System.Windows.Forms.DataGridView listaConductores;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
