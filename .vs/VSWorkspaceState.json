@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DataBase",
+    "\\Datos",
+    "\\Entidad",
+    "\\PresentacionGUI"
   ],
+  "SelectedNode": "\\PresentacionGUI",
   "PreviewInSolutionExplorer": false
 }

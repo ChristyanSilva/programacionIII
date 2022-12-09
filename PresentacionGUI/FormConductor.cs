@@ -111,8 +111,7 @@ namespace PresentacionGUI
             dtFecha.Text = "";
             anioexp.Text = "";
         }
-
-        /*
+        
         private void FormConductor_Load(object sender, EventArgs e)
         {
             LlenarGrid();
@@ -135,7 +134,7 @@ namespace PresentacionGUI
                 Conductor co = ConductorCAD.Consultar(txtNombre.Text.Trim(), txtApellido.Text.Trim());
                 if (co==null) {
                     MessageBox.Show("El conductor no se encuentra registrado");
-                    LimparCampos();
+                    LimpiarCampos();
                     consultado = false; 
                 }
                 else
@@ -151,9 +150,9 @@ namespace PresentacionGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (consultado ==false)
+            if (consultado==false)
             {
-                MessageBox.Show("Debe consultar el conductor");
+                MessageBox.Show("Primero debe consultar el conductor");
             }
             else if(txtNombre.Text.Trim() == "")
             {
@@ -172,7 +171,7 @@ namespace PresentacionGUI
                     if (ConductorCAD.Actualizar(co))
                     {
                         LlenarGrid();
-                        LimparCampos();
+                        LimpiarCampos();
                         MessageBox.Show("El conductor se ha actualizado correctamente");
                     }
                     else
@@ -202,7 +201,7 @@ namespace PresentacionGUI
                     if (ConductorCAD.Eliminar(txtNombre.Text.Trim(), txtApellido.Text.Trim()))
                     {
                         LlenarGrid();
-                        LimparCampos();
+                        LimpiarCampos();
                         MessageBox.Show("El conductor se ha eliminado correctamente");
                     }
                     else
@@ -216,6 +215,5 @@ namespace PresentacionGUI
                 }
             }
         }
-        */
     }
 }

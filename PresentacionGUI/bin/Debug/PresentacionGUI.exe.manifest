@@ -67,26 +67,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Logica.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Logica.dll" size="9216">
       <assemblyIdentity name="Logica" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MEEtcQM0hEw1hjLZ4a738RFW+dutaQ0l69LIdxJSap4=</dsig:DigestValue>
+        <dsig:DigestValue>v8wP5owj5UulR+KyKoump7iujFjE72shR7iclANS/JU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PresentacionGUI.exe" size="926192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PresentacionGUI.exe" size="928240">
       <assemblyIdentity name="PresentacionGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1JumZG/qjTXv+TOiQJ0+mNysj0wkE+pXfT2cpCSXAM4=</dsig:DigestValue>
+        <dsig:DigestValue>dsX9WpIAIsN0ipG2vGcN3WvWVlzAJYA8D/VTEau+6ys=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
