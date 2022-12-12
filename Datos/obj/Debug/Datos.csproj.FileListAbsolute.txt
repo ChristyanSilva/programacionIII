@@ -51,3 +51,12 @@ C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.csproj.CoreCom
 C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.dll
 C:\Users\yahik\Source\Repos\programacionIII\Datos\obj\Debug\Datos.pdb
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\bin\Debug\Datos.dll
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\bin\Debug\Datos.pdb
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\bin\Debug\Entidad.dll
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\bin\Debug\Entidad.pdb
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\obj\Debug\Datos.dll
+C:\Users\POWER I5\Desktop\Nueva carpeta\Datos\obj\Debug\Datos.pdb

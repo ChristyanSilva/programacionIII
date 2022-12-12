@@ -32,8 +32,15 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPersonales = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtidconductor = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtestado = new System.Windows.Forms.ListBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.txtkilometros = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtgasolina = new System.Windows.Forms.ListBox();
@@ -44,22 +51,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtmarca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.tabGeneral = new System.Windows.Forms.TabPage();
             this.listaVehiculos = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtidconductor = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPersonales.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -116,6 +109,52 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // txtidconductor
+            // 
+            this.txtidconductor.Location = new System.Drawing.Point(176, 239);
+            this.txtidconductor.Name = "txtidconductor";
+            this.txtidconductor.Size = new System.Drawing.Size(144, 20);
+            this.txtidconductor.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(28, 242);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Id del conductor";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(389, 171);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(86, 23);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "ELIMINAR";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(389, 217);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(86, 23);
+            this.btnSalir.TabIndex = 2;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(389, 127);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "ACTUALIZAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // txtestado
             // 
             this.txtestado.FormattingEnabled = true;
@@ -128,6 +167,16 @@
             this.txtestado.Size = new System.Drawing.Size(144, 17);
             this.txtestado.TabIndex = 14;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(389, 80);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(86, 23);
+            this.btnGuardar.TabIndex = 1;
+            this.btnGuardar.Text = "CONSULTAR";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -136,6 +185,16 @@
             this.label6.Size = new System.Drawing.Size(101, 13);
             this.label6.TabIndex = 13;
             this.label6.Text = "Estado del Vehiculo";
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(389, 32);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(86, 23);
+            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.Text = "GUARDAR";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // txtkilometros
             // 
@@ -221,36 +280,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Marca del Vehiculo";
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(389, 217);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(86, 23);
-            this.btnSalir.TabIndex = 2;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(389, 80);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(86, 23);
-            this.btnGuardar.TabIndex = 1;
-            this.btnGuardar.Text = "CONSULTAR";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(389, 32);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(86, 23);
-            this.btnNuevo.TabIndex = 0;
-            this.btnNuevo.Text = "GUARDAR";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
             // tabGeneral
             // 
             this.tabGeneral.Controls.Add(this.listaVehiculos);
@@ -265,90 +294,11 @@
             // listaVehiculos
             // 
             this.listaVehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listaVehiculos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
             this.listaVehiculos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listaVehiculos.Location = new System.Drawing.Point(3, 3);
             this.listaVehiculos.Name = "listaVehiculos";
             this.listaVehiculos.Size = new System.Drawing.Size(742, 289);
             this.listaVehiculos.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Marca";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Placa";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Años de Uso";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Tipo de gasolina";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Kilometros";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Estado";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Id Conductor";
-            this.Column7.Name = "Column7";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(389, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "ACTUALIZAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(389, 171);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "ELIMINAR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txtidconductor
-            // 
-            this.txtidconductor.Location = new System.Drawing.Point(176, 239);
-            this.txtidconductor.Name = "txtidconductor";
-            this.txtidconductor.Size = new System.Drawing.Size(144, 20);
-            this.txtidconductor.TabIndex = 18;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 242);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 13);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Id del conductor";
             // 
             // FormVehiculo
             // 
@@ -390,18 +340,11 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.TabPage tabGeneral;
         private System.Windows.Forms.DataGridView listaVehiculos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.ListBox txtgasolina;
         private System.Windows.Forms.TextBox txtkilometros;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox txtestado;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.TextBox txtidconductor;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;

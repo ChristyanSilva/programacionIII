@@ -44,7 +44,7 @@ namespace PresentacionGUI
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            /*
+            
             if (txtmarca.Text.Trim() == "")
             {
                 MessageBox.Show("todos los campos son obligatorios");
@@ -59,7 +59,7 @@ namespace PresentacionGUI
                     ve.aniosdeUso = Convert.ToInt32(aniouso.Text.Trim());
                     ve.tipoGasolina= txtplaca.Text.Trim().ToUpper();
                     ve.kilometraje = Convert.ToDouble(txtkilometros.Text.Trim());
-                    ve.estadodelVehiculo= txtestado.Text.Trim().ToUpper();
+                    ve.estadodelVehiculo= txtestado.Text.ToString();
                     ve.idConductorAsignado= Convert.ToInt32(txtidconductor.Text.Trim());
 
                     if (VehiculoCAD.Guardardb(ve))
@@ -67,7 +67,7 @@ namespace PresentacionGUI
                         LlenarGrid();
                         LimparCampos();
                         MessageBox.Show("El vehiculo se ha guardado correctamente");
-                        consultado = false;
+                        //consultado = false;
                     }
                     else
                     {
@@ -79,12 +79,12 @@ namespace PresentacionGUI
                     MessageBox.Show(ex.Message);
                 }
             }
-            */
+            
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            /*
+            
             if (txtplaca.Text.Trim() == "")
             {
                 MessageBox.Show("por favor ingrese la placa del vehiculo a consultar");
@@ -111,12 +111,12 @@ namespace PresentacionGUI
                     consultado = true;
                 }
             }
-            */
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            /*
+            
             if (consultado == false)
             {
                 MessageBox.Show("Debe consultar el vehiculo");
@@ -154,12 +154,12 @@ namespace PresentacionGUI
                     MessageBox.Show(ex.Message);
                 }
             }
-            */
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            /*
+            
             if (txtplaca.Text.Trim() == "")
             {
                 MessageBox.Show("El campos es obligatorio");
@@ -186,21 +186,19 @@ namespace PresentacionGUI
                 }
 
             }
-            */
+            
         }
         public void LlenarGrid()
         {
-            /*
             DataTable datos = VehiculoCAD.listar();
             if (datos == null)
             {
-                MessageBox.Show("no se logro acceder a los datos");
+                MessageBox.Show("no se logro acceder a los datos de vehiculos");
             }
             else
             {
-                listaVehiculos.DataSource = datos.DefaultView;
+                listaVehiculos.DataSource = datos;
             }
-            */
         }
 
         public void LimparCampos()
