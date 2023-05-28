@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PresentacionGUI"
   ],
+  "SelectedNode": "\\PresentacionGUI\\FormPrincipal.cs",
   "PreviewInSolutionExplorer": false
 }

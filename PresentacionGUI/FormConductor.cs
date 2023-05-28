@@ -86,10 +86,8 @@ namespace PresentacionGUI
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();   
+            this.Close();
         }
-
-        
         public void LlenarGrid()
         {
             DataTable datos = ConductorCAD.listar();
@@ -110,6 +108,16 @@ namespace PresentacionGUI
             txtApellido.Text = "";
             dtFecha.Text = "";
             anioexp.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
 
         /*

@@ -16,7 +16,7 @@ namespace Datos
 
         public Conexion()
         {
-            dbConnection = new SqlConnection("Data Source=DESKTOP-IVBU7DH;Initial Catalog=SILVADB;Integrated Security=True");
+            dbConnection = new SqlConnection("Data Source=DESKTOP-MS21OKB\\SQLEXPRESS;Initial Catalog=tax-manager;Integrated Security=True");
         }
 
         public void Conectar()

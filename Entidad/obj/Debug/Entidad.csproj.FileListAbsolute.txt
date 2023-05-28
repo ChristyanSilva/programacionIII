@@ -16,3 +16,9 @@ C:\Users\yahik\Source\Repos\programacionIII\Entidad\obj\Debug\Entidad.csproj.Ass
 C:\Users\yahik\Source\Repos\programacionIII\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\yahik\Source\Repos\programacionIII\Entidad\obj\Debug\Entidad.dll
 C:\Users\yahik\Source\Repos\programacionIII\Entidad\obj\Debug\Entidad.pdb
+C:\Users\POWER I5\source\repos\programacionIII\Entidad\bin\Debug\Entidad.dll
+C:\Users\POWER I5\source\repos\programacionIII\Entidad\bin\Debug\Entidad.pdb
+C:\Users\POWER I5\source\repos\programacionIII\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
+C:\Users\POWER I5\source\repos\programacionIII\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\POWER I5\source\repos\programacionIII\Entidad\obj\Debug\Entidad.dll
+C:\Users\POWER I5\source\repos\programacionIII\Entidad\obj\Debug\Entidad.pdb

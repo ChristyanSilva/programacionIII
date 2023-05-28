@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Datos.dll" size="6656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Datos.dll" size="7168">
       <assemblyIdentity name="Datos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EIR7EnjbihHp7reuXnDVw0rRGj40ZPFc9bzUxQlBIHk=</dsig:DigestValue>
+        <dsig:DigestValue>RLRVgJes58h/cw9D1GKYT8fmO+hwz5Uua4lrex264Es=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GWLzU7tC/zoeTEm87dYG1kcW9sWWEXlqz5RKc1v8kx8=</dsig:DigestValue>
+        <dsig:DigestValue>v4B6191WsvqWpwMvPMYp2U4OTpa9XiXYEl4eD1q05V8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,19 +74,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MEEtcQM0hEw1hjLZ4a738RFW+dutaQ0l69LIdxJSap4=</dsig:DigestValue>
+        <dsig:DigestValue>ikW3GTxVzwMaPXcfl4CMDwnI84jdNjs0So1SIzLPbyY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PresentacionGUI.exe" size="926192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PresentacionGUI.exe" size="927216">
       <assemblyIdentity name="PresentacionGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1JumZG/qjTXv+TOiQJ0+mNysj0wkE+pXfT2cpCSXAM4=</dsig:DigestValue>
+        <dsig:DigestValue>PLq3QiWOpC7PVMZpzFxHzcDzscozChDIwOD5WXSHIvs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

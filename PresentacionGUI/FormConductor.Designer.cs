@@ -115,6 +115,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "ELIMINAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // anioexp
             // 
@@ -131,6 +132,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "ACTUALIZAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtApellido
             // 
@@ -239,7 +241,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(455, 321);
+            this.ClientSize = new System.Drawing.Size(454, 321);
             this.Controls.Add(this.tabControl1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
