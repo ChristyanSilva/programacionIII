@@ -1,8 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\PresentacionGUI"
   ],
   "SelectedNode": "\\PresentacionGUI\\FormPrincipal.cs",
+=======
+    "\\DataBase",
+    "\\Datos",
+    "\\Entidad",
+    "\\PresentacionGUI"
+  ],
+  "SelectedNode": "\\PresentacionGUI",
+>>>>>>> 71e9cfd73ab9bf73edeb1d6200ad72ae8cc42fc8
   "PreviewInSolutionExplorer": false
 }

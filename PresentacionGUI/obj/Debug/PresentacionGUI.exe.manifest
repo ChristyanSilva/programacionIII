@@ -50,7 +50,11 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>RLRVgJes58h/cw9D1GKYT8fmO+hwz5Uua4lrex264Es=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>Nc2iKapEiSHyn+enISTrZ/DCDA+cwrZPod0LaoNYkhM=</dsig:DigestValue>
+>>>>>>> 71e9cfd73ab9bf73edeb1d6200ad72ae8cc42fc8
       </hash>
     </dependentAssembly>
   </dependency>
@@ -67,26 +71,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Logica.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Logica.dll" size="11264">
       <assemblyIdentity name="Logica" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>ikW3GTxVzwMaPXcfl4CMDwnI84jdNjs0So1SIzLPbyY=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>KZFWQXSZAe6w03nodj76FLmGpboCG02ZrwiSvm5ZwO0=</dsig:DigestValue>
+>>>>>>> 71e9cfd73ab9bf73edeb1d6200ad72ae8cc42fc8
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PresentacionGUI.exe" size="927216">
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PresentacionGUI.exe" size="930288">
+>>>>>>> 71e9cfd73ab9bf73edeb1d6200ad72ae8cc42fc8
       <assemblyIdentity name="PresentacionGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>PLq3QiWOpC7PVMZpzFxHzcDzscozChDIwOD5WXSHIvs=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>GYezcrRX6derx9BNJnzHSsD6rypAxpItuN/l2NwZMgk=</dsig:DigestValue>
+>>>>>>> 71e9cfd73ab9bf73edeb1d6200ad72ae8cc42fc8
       </hash>
     </dependentAssembly>
   </dependency>

@@ -20,6 +20,7 @@ C:\Users\yahik\Source\Repos\programacionIII\Logica\obj\Debug\Logica.csproj.CoreC
 C:\Users\yahik\Source\Repos\programacionIII\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\yahik\Source\Repos\programacionIII\Logica\obj\Debug\Logica.dll
 C:\Users\yahik\Source\Repos\programacionIII\Logica\obj\Debug\Logica.pdb
+<<<<<<< HEAD
 C:\Users\POWER I5\source\repos\programacionIII\Logica\bin\Debug\Logica.dll
 C:\Users\POWER I5\source\repos\programacionIII\Logica\bin\Debug\Logica.pdb
 C:\Users\POWER I5\source\repos\programacionIII\Logica\bin\Debug\Datos.dll
@@ -31,3 +32,16 @@ C:\Users\POWER I5\source\repos\programacionIII\Logica\obj\Debug\Logica.csproj.Co
 C:\Users\POWER I5\source\repos\programacionIII\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\POWER I5\source\repos\programacionIII\Logica\obj\Debug\Logica.dll
 C:\Users\POWER I5\source\repos\programacionIII\Logica\obj\Debug\Logica.pdb
+=======
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\bin\Debug\Logica.dll
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\bin\Debug\Logica.pdb
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\bin\Debug\Datos.dll
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\bin\Debug\Entidad.dll
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\bin\Debug\Datos.pdb
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\bin\Debug\Entidad.pdb
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\obj\Debug\Logica.dll
+C:\Users\POWER I5\Desktop\Nueva carpeta\Logica\obj\Debug\Logica.pdb
+>>>>>>> 71e9cfd73ab9bf73edeb1d6200ad72ae8cc42fc8

@@ -7,14 +7,18 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="PresentacionGUI.exe.manifest" size="5942">
+    <dependentAssembly dependencyType="install" codebase="PresentacionGUI.exe.manifest" size="5943">
       <assemblyIdentity name="PresentacionGUI.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>M2jWX9lBfKOvWdkOLJvrwl/MjoNao4rTbMy25pBAVMY=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>gUVTTyc/qmxH9m7rWEIsaBn8PfgKE7FkmZuDPAlzMZw=</dsig:DigestValue>
+>>>>>>> 71e9cfd73ab9bf73edeb1d6200ad72ae8cc42fc8
       </hash>
     </dependentAssembly>
   </dependency>
