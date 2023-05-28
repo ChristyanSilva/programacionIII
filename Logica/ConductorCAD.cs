@@ -64,36 +64,34 @@ namespace Datos
             {
                 return null;
             }
-
         }
 
-        /*
+        
         public static Conductor Consultar(string nombre, string apellido)
         {
             try
             {
-                Conexion con = new Conexion();
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
                 string sql = "SELECT * FROM conductores WHERE nombres= '"+nombre+"' or apellidos= '"+apellido+"';";
-                SqlCommand comando = new SqlCommand(sql, con.conectar());
+                SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 SqlDataReader dataReader = comando.ExecuteReader();
-                Conductor co= new Conductor();
+                Conductor co = null;
                 if (dataReader.Read())
                 {
-                    co.nombre = dataReader["nombres"].ToString() ; 
-                    co.apellido = dataReader["apellidos"].ToString(); 
-                    co.fechaNacimiento= dataReader["fechanacimiento"].ToString(); ;
+                    co = new Conductor
+                    {
+                        nombre = dataReader["nombres"].ToString(),
+                        apellido = dataReader["apellidos"].ToString(),
+                        fechaNacimiento = dataReader["fechanacimiento"].ToString()
+                    };
+                    ;
                     co.aniosdeExperiencia= Convert.ToInt32(dataReader["anioexp"].ToString());
-                    con.desconectar();
-                    return co;
                 }
-                else
-                {
-
-                    con.desconectar();
-                    return null;
-                }
+                sqlServerConnection.Desconectar();
+                return co;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return null;
             }
@@ -103,24 +101,22 @@ namespace Datos
         {
             try
             {
-                Conexion con = new Conexion();
-                con.conectar();
+                bool updatedOK = false;
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
                 string sql = "UPDATE conductores SET apellidos='" + c.apellido + "',fechanacimiento='" + c.fechaNacimiento + "',anioexp=" + c.aniosdeExperiencia + " WHERE nombres='" + c.nombre + "';";
 
-                SqlCommand comando = new SqlCommand(sql);
+                SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 int cantidad = comando.ExecuteNonQuery();
                 if (cantidad == 1)
                 {
-                    con.desconectar();
-                    return true;
+                    updatedOK = true;
                 }
-                else
-                {
-                    con.desconectar();
-                    return false;
-                }
+
+                sqlServerConnection.Desconectar();
+                return updatedOK;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -130,27 +126,26 @@ namespace Datos
         {
             try
             {
-                Conexion con = new Conexion();
-                string sql = "DELETE FROM conductores WHERE nombres='" + nombre + " AND apellidos='" + apellido + "';";
+                bool deletedOK = false;
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
 
-                SqlCommand comando = new SqlCommand(sql);
+                string sql = "DELETE FROM conductores WHERE nombres='" + nombre + "' AND apellidos='" + apellido + "';";
+
+                SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 int cantidad = comando.ExecuteNonQuery();
                 if (cantidad == 1)
                 {
-                    con.desconectar();
-                    return true;
+                    deletedOK = true;
                 }
-                else
-                {
-                    con.desconectar();
-                    return false;
-                }
+                sqlServerConnection.Desconectar();
+                return deletedOK;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
         }
-        */
+        
     }
 }

@@ -149,6 +149,7 @@
             this.consultaconductor.TabIndex = 3;
             this.consultaconductor.Text = "CONSULTAR";
             this.consultaconductor.UseVisualStyleBackColor = true;
+            this.consultaconductor.Click += new System.EventHandler(this.consultaconductor_Click);
             // 
             // label4
             // 

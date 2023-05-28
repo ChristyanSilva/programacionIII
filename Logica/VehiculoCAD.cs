@@ -7,28 +7,30 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Common;
 
 namespace Logica
 {
     public class VehiculoCAD
     {
-        /*
+        
         public static bool Guardardb(Vehiculo v)
         {
             try
             {
-                Conexion con = new Conexion();
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
                 string sql = "INSERT INTO vehiculo (marca,placa,aniosdeUso,tipoGasolina,kilometraje,estadodelVehiculo,conductorAsignado) VALUES ('" + v.marca + "','" + v.placa + "'," + v.aniosdeUso + ",'" + v.tipoGasolina + "',"+v.kilometraje+",'"+v.estadodelVehiculo+"',"+v.idConductorAsignado+")";
-                SqlCommand comando = new SqlCommand(sql);
-                int cantidad = comando.ExecuteNonQuery();
+                DbCommand newCommand = new SqlCommand(sql);
+                newCommand.Connection = sqlServerConnection.dbConnection;
+                int cantidad = newCommand.ExecuteNonQuery();
+                sqlServerConnection.Desconectar();
                 if (cantidad == 1)
                 {
-                    con.desconectar();
                     return true;
                 }
                 else
                 {
-                    con.desconectar();
                     return false;
                 }
             }
@@ -42,30 +44,32 @@ namespace Logica
         {
             try
             {
-                Conexion con = new Conexion();
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
                 string sql = "SELECT * from vehiculo;";
-                SqlCommand comando = new SqlCommand(sql, con.conectar());
+                SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 SqlDataReader dataReader = comando.ExecuteReader(CommandBehavior.CloseConnection);
                 DataTable dataTable = new DataTable();
                 dataTable.Load(dataReader);
 
-                con.desconectar();
+                sqlServerConnection.Desconectar();
                 return dataTable;
             }
 
-            catch (Exception ex)
+            catch (Exception)
             {
                 return null;
             }
-
         }
         public static Vehiculo Consultar(string marca, string placa)
         {
             try
             {
-                Conexion con = new Conexion();
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
                 string sql = "SELECT * FROM vehiculo WHERE marca= '" + marca + "' or placa= '" + placa + "';";
-                SqlCommand comando = new SqlCommand(sql, con.conectar());
+                
+                SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 SqlDataReader dataReader = comando.ExecuteReader();
                 Vehiculo v = new Vehiculo();
                 if (dataReader.Read())
@@ -78,13 +82,13 @@ namespace Logica
                     v.estadodelVehiculo= dataReader["estadodelvehiculo"].ToString();
                     v.idConductorAsignado= Convert.ToInt32(dataReader["conductorAsignado"].ToString());
 
-                    con.desconectar();
+                    sqlServerConnection.Desconectar();
                     return v;
                 }
                 else
                 {
 
-                    con.desconectar();
+                    sqlServerConnection.Desconectar();
                     return null;
                 }
             }
@@ -98,21 +102,20 @@ namespace Logica
         {
             try
             {
-                Conexion con = new Conexion();
+                bool updatedOK = false;
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
                 string sql = "UPDATE vehiculo SET marca='" + v.marca + "',aniosdeUso=" + v.aniosdeUso + ",tipoGasolina='" + v.tipoGasolina+",kilometraje=" +v.kilometraje+",estadodelVehiculo='"+v.estadodelVehiculo+"',conductorAsignado='"+v.idConductorAsignado+ "' WHERE placa=" + v.placa + ";";
 
                 SqlCommand comando = new SqlCommand(sql);
                 int cantidad = comando.ExecuteNonQuery();
                 if (cantidad == 1)
                 {
-                    con.desconectar();
-                    return true;
+                    updatedOK = true;
                 }
-                else
-                {
-                    con.desconectar();
-                    return false;
-                }
+
+                sqlServerConnection.Desconectar();
+                return updatedOK;
             }
             catch (Exception ex)
             {
@@ -124,27 +127,25 @@ namespace Logica
         {
             try
             {
-                Conexion con = new Conexion();
+                bool deletedOK = false;
+                Conexion sqlServerConnection = new Conexion();
+                sqlServerConnection.Conectar();
                 string sql = "DELETE FROM vehiculo WHERE placa='"+placa+ "';";
 
-                SqlCommand comando = new SqlCommand(sql);
+                SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 int cantidad = comando.ExecuteNonQuery();
                 if (cantidad == 1)
                 {
-                    con.desconectar();
-                    return true;
+                    deletedOK = true;
                 }
-                else
-                {
-                    con.desconectar();
-                    return false;
-                }
+                sqlServerConnection.Desconectar();
+                return deletedOK;
             }
             catch (Exception ex)
             {
                 return false;
             }
         }
-        */
+        
     }
 }
