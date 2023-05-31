@@ -41,11 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConductorCAD.cs" />
-    <Compile Include="IServicio.cs" />
+    <Compile Include="ServicioConductor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicioVehiculo.cs" />
-    <Compile Include="VehiculoCAD.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">
