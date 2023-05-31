@@ -1,60 +1,52 @@
-﻿using Entidad;
+﻿using Datos;
+using Entidad;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
-using Datos; 
+using System.Data.Common;
 
-namespace Datos
+namespace Logica
 {
-    public class RepositorioConductor
+    public class RepositorioVehiculo
     {
-        public RepositorioConductor()
-        {
-
-        }
-        public bool Guardardb(Conductor c)
+        
+        public static bool Guardardb(Vehiculo v)
         {
             try
             {
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                // SQL Comando
-                string queryText = "INSERT INTO conductores (nombres, apellidos, " +
-                    "fechanacimiento, anioexp) VALUES ('" + c.nombre + "','" + c.apellido +
-                    "','" + c.fechaNacimiento + "'," + c.aniosdeExperiencia + ")";
-                DbCommand newCommand = new SqlCommand(queryText);
+                string sql = "INSERT INTO vehiculo (marca,placa,aniosdeUso,tipoGasolina,kilometraje,estadodelVehiculo,conductorAsignado) VALUES ('" + v.marca + "','" + v.placa + "'," + v.aniosdeUso + ",'" + v.tipoGasolina + "',"+v.kilometraje+",'"+v.estadodelVehiculo+"',"+v.idConductorAsignado+")";
+                DbCommand newCommand = new SqlCommand(sql);
                 newCommand.Connection = sqlServerConnection.dbConnection;
                 int cantidad = newCommand.ExecuteNonQuery();
                 sqlServerConnection.Desconectar();
-                
-                if (cantidad==1)
+                if (cantidad == 1)
                 {
                     return true;
-                }else
+                }
+                else
                 {
                     return false;
-                }                  
+                }
             }
-            catch(Exception)
+            catch (Exception ex)
             {
                 return false;
             }
         }
 
-        
-        public static DataTable listarTodo() // getall(dto)
+        public static DataTable listar()
         {
             try
             {
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                string sql = "SELECT * from conductores;";
+                string sql = "SELECT * from vehiculo;";
                 SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 SqlDataReader dataReader = comando.ExecuteReader(CommandBehavior.CloseConnection);
                 DataTable dataTable = new DataTable();
@@ -69,48 +61,53 @@ namespace Datos
                 return null;
             }
         }
-
-        
-        public static Conductor Consultar(string nombre, string apellido)
+        public static Vehiculo Consultar(string marca, string placa)
         {
             try
             {
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                string sql = "SELECT * FROM conductores WHERE nombres= '"+nombre+"' or apellidos= '"+apellido+"';";
+                string sql = "SELECT * FROM vehiculo WHERE marca= '" + marca + "' or placa= '" + placa + "';";
+                
                 SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 SqlDataReader dataReader = comando.ExecuteReader();
-                Conductor co = null;
+                Vehiculo v = new Vehiculo();
                 if (dataReader.Read())
                 {
-                    co = new Conductor
-                    {
-                        nombre = dataReader["nombres"].ToString(),
-                        apellido = dataReader["apellidos"].ToString(),
-                        fechaNacimiento = dataReader["fechanacimiento"].ToString()
-                    };
-                    ;
-                    co.aniosdeExperiencia= Convert.ToInt32(dataReader["anioexp"].ToString());
+                    v.marca = dataReader["marca"].ToString();
+                    v.placa = dataReader["placa"].ToString();
+                    v.aniosdeUso = Convert.ToInt32(dataReader["aniosdeuso"].ToString());
+                    v.tipoGasolina = dataReader["tipoGasolina"].ToString();
+                    v.kilometraje = Convert.ToDouble(dataReader["kilometraje"].ToString());
+                    v.estadodelVehiculo= dataReader["estadodelvehiculo"].ToString();
+                    v.idConductorAsignado= Convert.ToInt32(dataReader["conductorAsignado"].ToString());
+
+                    sqlServerConnection.Desconectar();
+                    return v;
                 }
-                sqlServerConnection.Desconectar();
-                return co;
+                else
+                {
+
+                    sqlServerConnection.Desconectar();
+                    return null;
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return null;
             }
         }
 
-        public static bool Actualizar(Conductor c)
+        public static bool Actualizar(Vehiculo v)
         {
             try
             {
                 bool updatedOK = false;
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                string sql = "UPDATE conductores SET apellidos='" + c.apellido + "',fechanacimiento='" + c.fechaNacimiento + "',anioexp=" + c.aniosdeExperiencia + " WHERE nombres='" + c.nombre + "';";
+                string sql = "UPDATE vehiculo SET marca='" + v.marca + "',aniosdeUso=" + v.aniosdeUso + ",tipoGasolina='" + v.tipoGasolina+",kilometraje=" +v.kilometraje+",estadodelVehiculo='"+v.estadodelVehiculo+"',conductorAsignado='"+v.idConductorAsignado+ "' WHERE placa=" + v.placa + ";";
 
-                SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
+                SqlCommand comando = new SqlCommand(sql);
                 int cantidad = comando.ExecuteNonQuery();
                 if (cantidad == 1)
                 {
@@ -120,21 +117,20 @@ namespace Datos
                 sqlServerConnection.Desconectar();
                 return updatedOK;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }
         }
 
-        public static bool Eliminar(string nombre, string apellido)
+        public static bool Eliminar(string placa)
         {
             try
             {
                 bool deletedOK = false;
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-
-                string sql = "DELETE FROM conductores WHERE nombres='" + nombre + "' AND apellidos='" + apellido + "';";
+                string sql = "DELETE FROM vehiculo WHERE placa='"+placa+ "';";
 
                 SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 int cantidad = comando.ExecuteNonQuery();
@@ -145,7 +141,7 @@ namespace Datos
                 sqlServerConnection.Desconectar();
                 return deletedOK;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }

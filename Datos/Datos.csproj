@@ -41,12 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Archivo.cs" />
-    <Compile Include="Conexion.cs" />
-    <Compile Include="ICrudArchivos.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositorioConductor.cs" />
-    <Compile Include="RepositorioVehicular.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositorioVehiculo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidad\Entidad.csproj">
