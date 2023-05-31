@@ -68,7 +68,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(780, 440);
+            this.tabControl1.Size = new System.Drawing.Size(756, 321);
             this.tabControl1.TabIndex = 4;
             // 
             // tabPersonales
@@ -77,7 +77,7 @@
             this.tabPersonales.Location = new System.Drawing.Point(4, 22);
             this.tabPersonales.Name = "tabPersonales";
             this.tabPersonales.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPersonales.Size = new System.Drawing.Size(772, 414);
+            this.tabPersonales.Size = new System.Drawing.Size(748, 295);
             this.tabPersonales.TabIndex = 0;
             this.tabPersonales.Text = "Registrar Conductores";
             this.tabPersonales.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txtmarca);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(128, 54);
+            this.groupBox2.Location = new System.Drawing.Point(115, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(530, 285);
             this.groupBox2.TabIndex = 1;
@@ -286,7 +286,7 @@
             this.tabGeneral.Location = new System.Drawing.Point(4, 22);
             this.tabGeneral.Name = "tabGeneral";
             this.tabGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGeneral.Size = new System.Drawing.Size(774, 415);
+            this.tabGeneral.Size = new System.Drawing.Size(748, 295);
             this.tabGeneral.TabIndex = 1;
             this.tabGeneral.Text = "Ver listado de Vehiculos";
             this.tabGeneral.UseVisualStyleBackColor = true;
@@ -297,7 +297,7 @@
             this.listaVehiculos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listaVehiculos.Location = new System.Drawing.Point(3, 3);
             this.listaVehiculos.Name = "listaVehiculos";
-            this.listaVehiculos.Size = new System.Drawing.Size(768, 409);
+            this.listaVehiculos.Size = new System.Drawing.Size(742, 289);
             this.listaVehiculos.TabIndex = 0;
             // 
             // FormVehiculo
@@ -305,12 +305,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(784, 441);
+            this.ClientSize = new System.Drawing.Size(753, 321);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormVehiculo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vehiculos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormVehiculo_FormClosing);
             this.Load += new System.EventHandler(this.FormVehiculo_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPersonales.ResumeLayout(false);

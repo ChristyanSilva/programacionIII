@@ -22,33 +22,6 @@ C:\Users\yahik\Source\Repos\programacionIII\PresentacionGUI\obj\Debug\Presentaci
 C:\Users\yahik\Source\Repos\programacionIII\PresentacionGUI\obj\Debug\Tax-Manager.csproj.CopyComplete
 C:\Users\yahik\Source\Repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.exe
 C:\Users\yahik\Source\Repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
-<<<<<<< HEAD
-C:\Users\POWER I5\Source\Repos\programacionIII\PresentacionGUI\bin\Debug\PresentacionGUI.exe
-C:\Users\POWER I5\Source\Repos\programacionIII\PresentacionGUI\bin\Debug\Logica.dll
-C:\Users\POWER I5\Source\Repos\programacionIII\PresentacionGUI\bin\Debug\Datos.dll
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\bin\Debug\Entidad.dll
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\bin\Debug\Entidad.pdb
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\bin\Debug\Logica.pdb
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\bin\Debug\Datos.pdb
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\Tax-Manager.csproj.AssemblyReference.cache
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\Tax-Manager.csproj.SuggestedBindingRedirects.cache
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.FormLogin.resources
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.FormVehiculo.resources
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.FormPrincipal.resources
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.FormConductor.resources
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.Properties.Resources.resources
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\Tax-Manager.csproj.GenerateResource.cache
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\Tax-Manager.csproj.CoreCompileInputs.cache
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.exe.manifest
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.application
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.exe
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\bin\Debug\PresentacionGUI.exe.config
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\bin\Debug\PresentacionGUI.exe.manifest
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\bin\Debug\PresentacionGUI.application
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\bin\Debug\PresentacionGUI.pdb
-C:\Users\POWER I5\source\repos\programacionIII\PresentacionGUI\obj\Debug\Tax-Manager.csproj.CopyComplete
-=======
 C:\Users\POWER I5\Desktop\Nueva carpeta\PresentacionGUI\bin\Debug\PresentacionGUI.exe.config
 C:\Users\POWER I5\Desktop\Nueva carpeta\PresentacionGUI\bin\Debug\PresentacionGUI.exe.manifest
 C:\Users\POWER I5\Desktop\Nueva carpeta\PresentacionGUI\bin\Debug\PresentacionGUI.application
@@ -73,4 +46,28 @@ C:\Users\POWER I5\Desktop\Nueva carpeta\PresentacionGUI\obj\Debug\PresentacionGU
 C:\Users\POWER I5\Desktop\Nueva carpeta\PresentacionGUI\obj\Debug\Tax-Manager.csproj.CopyComplete
 C:\Users\POWER I5\Desktop\Nueva carpeta\PresentacionGUI\obj\Debug\PresentacionGUI.exe
 C:\Users\POWER I5\Desktop\Nueva carpeta\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
->>>>>>> 71e9cfd73ab9bf73edeb1d6200ad72ae8cc42fc8
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\PresentacionGUI.exe.config
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\PresentacionGUI.exe.manifest
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\PresentacionGUI.application
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\PresentacionGUI.exe
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\PresentacionGUI.pdb
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\Entidad.dll
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\Logica.dll
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\Datos.dll
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\Entidad.pdb
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\Logica.pdb
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\bin\Debug\Datos.pdb
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\Tax-Manager.csproj.AssemblyReference.cache
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\Tax-Manager.csproj.SuggestedBindingRedirects.cache
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.FormLogin.resources
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.FormVehiculo.resources
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.FormPrincipal.resources
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.FormConductor.resources
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.Properties.Resources.resources
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\Tax-Manager.csproj.GenerateResource.cache
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\Tax-Manager.csproj.CoreCompileInputs.cache
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.exe.manifest
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.application
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\Tax-Manager.csproj.CopyComplete
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.exe
+C:\Users\POWER I5\OneDrive\Escritorio\programacionIII-main (1)\programacionIII-main\PresentacionGUI\obj\Debug\PresentacionGUI.pdb

@@ -19,8 +19,7 @@ namespace PresentacionGUI
 
         private void registrarVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
         {          
-        }
-       
+        }       
 
         private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -38,7 +37,7 @@ namespace PresentacionGUI
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Cerrar();
         }
 
         private void registrarConductorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,6 +67,19 @@ namespace PresentacionGUI
 
         private void consultarConductoresToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var respuesta = MessageBox.Show("Desea Salir?", "Agenda", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (respuesta == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

@@ -77,11 +77,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="FormLogAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <Compile Include="FormLogAdmin.designer.cs">
+      <DependentUpon>FormLogAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVehiculo.cs">
       <SubType>Form</SubType>
@@ -103,8 +103,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FormLogAdmin.resx">
+      <DependentUpon>FormLogAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVehiculo.resx">
       <DependentUpon>FormVehiculo.cs</DependentUpon>

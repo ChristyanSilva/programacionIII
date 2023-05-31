@@ -1,5 +1,4 @@
-﻿using Datos;
-using Entidad;
+﻿using Entidad;
 using Logica;
 using System;
 using System.Collections.Generic;
@@ -45,6 +44,7 @@ namespace PresentacionGUI
         {
 
         }
+        ServicioConductor servicioConductor = new ServicioConductor();
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
@@ -56,12 +56,13 @@ namespace PresentacionGUI
             {
                 try
                 {
+                    
                     Conductor co = new Conductor();
                     co.nombre = txtNombre.Text.Trim().ToUpper();
                     co.apellido = txtApellido.Text.Trim().ToUpper();
                     co.fechaNacimiento = dtFecha.Value.Year+"-"+dtFecha.Value.Month+"-"+dtFecha.Value.Day;
                     co.aniosdeExperiencia = Convert.ToInt32(anioexp.Text.Trim());
-                    if (ConductorCAD.Guardardb(co))
+                    if (servicioConductor.Guardardb(co))
                     {
                         LlenarGrid();
                         LimpiarCampos();
@@ -86,11 +87,13 @@ namespace PresentacionGUI
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();   
         }
+
+        
         public void LlenarGrid()
         {
-            DataTable datos = ConductorCAD.listar();
+            DataTable datos = servicioConductor.ListarTodo();
             if (datos == null)
             {
                 MessageBox.Show("no se logro acceder a los datos");
@@ -129,7 +132,7 @@ namespace PresentacionGUI
                 MessageBox.Show("por favor ingrese el apellido del conductor a consultar");
             }else
             {
-                Conductor co = ConductorCAD.Consultar(txtNombre.Text.Trim(), txtApellido.Text.Trim());
+                Conductor co = servicioConductor.Consultar(txtNombre.Text.Trim(), txtApellido.Text.Trim());
                 if (co==null) {
                     MessageBox.Show("El conductor no se encuentra registrado");
                     LimpiarCampos();
@@ -166,7 +169,7 @@ namespace PresentacionGUI
                     co.fechaNacimiento = dtFecha.Value.Year + "-" + dtFecha.Value.Month + "-" + dtFecha.Value.Day;
                     co.aniosdeExperiencia = Convert.ToInt32(anioexp.Text.Trim());
 
-                    if (ConductorCAD.Actualizar(co))
+                    if (ServicioConductor.Actualizar(co))
                     {
                         LlenarGrid();
                         LimpiarCampos();
@@ -196,7 +199,7 @@ namespace PresentacionGUI
                 try
                 {
 
-                    if (ConductorCAD.Eliminar(txtNombre.Text.Trim(), txtApellido.Text.Trim()))
+                    if (ServicioConductor.Eliminar(txtNombre.Text.Trim(), txtApellido.Text.Trim()))
                     {
                         LlenarGrid();
                         LimpiarCampos();

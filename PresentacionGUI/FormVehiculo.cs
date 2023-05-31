@@ -1,5 +1,4 @@
-﻿using Datos;
-using Entidad;
+﻿using Entidad;
 using Logica;
 using System;
 using System.Collections.Generic;
@@ -42,6 +41,8 @@ namespace PresentacionGUI
             this.Close();
         }
 
+        ServicioVehiculo servicioVehiculo = new ServicioVehiculo();
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             
@@ -62,7 +63,7 @@ namespace PresentacionGUI
                     ve.estadodelVehiculo= txtestado.Text.ToString();
                     ve.idConductorAsignado= Convert.ToInt32(txtidconductor.Text.Trim());
 
-                    if (VehiculoCAD.Guardardb(ve))
+                    if (servicioVehiculo.Guardardb(ve))
                     {
                         LlenarGrid();
                         LimparCampos();
@@ -91,7 +92,7 @@ namespace PresentacionGUI
             }
             else
             {
-                Vehiculo ve = VehiculoCAD.Consultar(txtmarca.Text.Trim(),txtplaca.Text.Trim());
+                Vehiculo ve = servicioVehiculo.Consultar(txtmarca.Text.Trim(),txtplaca.Text.Trim());
                 if (ve == null)
                 {
                     MessageBox.Show("El vehiculo con placa " + txtplaca.Text + " no se encuentra registrado");
@@ -138,7 +139,7 @@ namespace PresentacionGUI
                     ve.estadodelVehiculo = txtestado.Text.Trim().ToUpper();
                     ve.idConductorAsignado = Convert.ToInt32(txtidconductor.Text.Trim());
 
-                    if (VehiculoCAD.Actualizar(ve))
+                    if (ServicioVehiculo.Actualizar(ve))
                     {
                         LlenarGrid();
                         LimparCampos();
@@ -169,7 +170,7 @@ namespace PresentacionGUI
                 try
                 {
 
-                    if (VehiculoCAD.Eliminar(txtplaca.Text.Trim()))
+                    if (ServicioVehiculo.Eliminar(txtplaca.Text.Trim()))
                     {
                         LlenarGrid();
                         LimparCampos();
@@ -190,7 +191,7 @@ namespace PresentacionGUI
         }
         public void LlenarGrid()
         {
-            DataTable datos = VehiculoCAD.listar();
+            DataTable datos = servicioVehiculo.ListarTodo();
             if (datos == null)
             {
                 MessageBox.Show("no se logro acceder a los datos de vehiculos");
@@ -218,5 +219,19 @@ namespace PresentacionGUI
             LlenarGrid();
         }
         bool consultado = false;
+
+        private void FormVehiculo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var respuesta = MessageBox.Show("Desea Salir?", "Agenda", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (respuesta == DialogResult.Yes)
+            {
+                this.Owner.Show();
+                this.Dispose();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
