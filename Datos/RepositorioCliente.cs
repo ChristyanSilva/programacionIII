@@ -5,20 +5,19 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
-using Datos; 
 
 namespace Datos
 {
-    public class RepositorioConductor
+    public class RepositorioCliente
     {
-        public RepositorioConductor()
+        public RepositorioCliente()
         {
 
         }
-        public bool Guardardb(Conductor c)
+
+        public bool Guardardb(Cliente c)
         {
             try
             {
@@ -26,34 +25,35 @@ namespace Datos
                 sqlServerConnection.Conectar();
                 // SQL Comando
                 string queryText = "INSERT INTO conductores (nombres, apellidos, " +
-                    "fechanacimiento, anioexp, nombreUsuario, contrasenia, cargo) VALUES ('" + c.nombre + "','" + c.apellido +
-                    "','" + c.fechaNacimiento + "'," + c.aniosdeExperiencia+ "'," + c.nombreUsuario + "','" + c.contrasenia + "','" + c.cargo + "')";
+                    "fechanacimiento, nombreUsuario, contrasenia, cargo) VALUES ('" + c.nombre + "','" + c.apellido +
+                    "','" + c.fechaNacimiento + "'," + c.nombreUsuario+ "','" + c.contrasenia + "','" + c.cargo+"')";
                 DbCommand newCommand = new SqlCommand(queryText);
                 newCommand.Connection = sqlServerConnection.dbConnection;
                 int cantidad = newCommand.ExecuteNonQuery();
                 sqlServerConnection.Desconectar();
-                
-                if (cantidad==1)
+
+                if (cantidad == 1)
                 {
                     return true;
-                }else
+                }
+                else
                 {
                     return false;
-                }                  
+                }
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return false;
             }
         }
-        
+
         public static DataTable listarTodo() // getall(dto)
         {
             try
             {
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                string sql = "SELECT * from conductores;";
+                string sql = "SELECT * from clientes;";
                 SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 SqlDataReader dataReader = comando.ExecuteReader(CommandBehavior.CloseConnection);
                 DataTable dataTable = new DataTable();
@@ -68,30 +68,26 @@ namespace Datos
                 return null;
             }
         }
-        
-        public static Conductor Consultar(string nombre, string apellido)
+
+        public static Cliente Consultar(string nombre, string apellido)
         {
             try
             {
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                string sql = "SELECT * FROM conductores WHERE nombres= '"+nombre+"' or apellidos= '"+apellido+"';";
+                string sql = "SELECT * FROM clientes WHERE nombres= '" + nombre + "' or apellidos= '" + apellido + "';";
                 SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 SqlDataReader dataReader = comando.ExecuteReader();
-                Conductor co = null;
+                Cliente co = null;
                 if (dataReader.Read())
                 {
-                    co = new Conductor
+                    co = new Cliente
                     {
                         nombre = dataReader["nombres"].ToString(),
                         apellido = dataReader["apellidos"].ToString(),
-                        fechaNacimiento = dataReader["fechanacimiento"].ToString(),
-                        nombreUsuario= dataReader["nombreUsuario"].ToString(),
-                        contrasenia= dataReader["contrasenia"].ToString(),
-                        cargo= dataReader["cargo"].ToString()
+                        fechaNacimiento = dataReader["fechanacimiento"].ToString()
                     };
-                    ;
-                    co.aniosdeExperiencia= Convert.ToInt32(dataReader["anioexp"].ToString());
+                    
                 }
                 sqlServerConnection.Desconectar();
                 return co;
@@ -109,7 +105,8 @@ namespace Datos
                 bool updatedOK = false;
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                string sql = "UPDATE conductores SET apellidos='" + c.apellido + "',fechanacimiento='" + c.fechaNacimiento + "',anioexp=" + c.aniosdeExperiencia + " WHERE nombres='" + c.nombre + "';";
+                string sql = "UPDATE clientes SET apellidos='" + c.apellido + "',fechanacimiento='"
+                    + c.fechaNacimiento + "'," +"WHERE nombres='" + c.nombre + "';";
 
                 SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 int cantidad = comando.ExecuteNonQuery();
@@ -135,7 +132,7 @@ namespace Datos
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
 
-                string sql = "DELETE FROM conductores WHERE nombres='" + nombre + "' AND apellidos='" + apellido + "';";
+                string sql = "DELETE FROM clientes WHERE nombres='" + nombre + "' AND apellidos='" + apellido + "';";
 
                 SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 int cantidad = comando.ExecuteNonQuery();
@@ -151,6 +148,5 @@ namespace Datos
                 return false;
             }
         }
-        
     }
 }

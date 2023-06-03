@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entidad
 {
-    public class Conductor:Persona
+    public class Cliente: Persona
     {
-        public int aniosdeExperiencia { get; set; }
-        public Conductor()
+
+        public Cliente()
         {
-            this.nombre="" ;
+            this.nombre = "";
             this.apellido = "";
             this.fechaNacimiento = "";
-            this.aniosdeExperiencia= 0;
             this.nombreUsuario = "";
             this.contrasenia = "";
             this.cargo = "";

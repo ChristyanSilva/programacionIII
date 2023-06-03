@@ -11,7 +11,9 @@ namespace Entidad
         public string nombre { get; set; }
         public string apellido { get; set; }
         public string fechaNacimiento { get; set; }
-
-        
+        public string nombreUsuario { get; set; }
+        public string contrasenia { get; set; }
+        public string cargo { get; set; }
     }
+
 }
