@@ -14,6 +14,9 @@ namespace PresentacionGUI
 {
     public partial class FormConductor : Form
     {
+
+        ServicioConductor servicioConductor = new ServicioConductor();
+
         public FormConductor()
         {
             InitializeComponent();
@@ -44,7 +47,26 @@ namespace PresentacionGUI
         {
 
         }
-        ServicioConductor servicioConductor = new ServicioConductor();
+
+        public bool confirmarContrasenia(TextBox contra, TextBox verificacion)
+        {
+
+            bool verificar = true;
+            if (txtcontra.Text.Trim() == "" || txtcontra2.Text.Trim()=="")
+            {
+                MessageBox.Show("el campo contraseña es obligatorio");
+            }
+            else
+            {
+                if (contra.Text.Trim() == verificacion.Text.Trim())
+                {
+                }
+                else
+                    verificar= false;
+
+            }
+            return verificar;
+        }
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
@@ -55,13 +77,25 @@ namespace PresentacionGUI
             else
             {
                 try
-                {
-                    
+                {                    
                     Conductor co = new Conductor();
                     co.nombre = txtNombre.Text.Trim().ToUpper();
                     co.apellido = txtApellido.Text.Trim().ToUpper();
                     co.fechaNacimiento = dtFecha.Value.Year+"-"+dtFecha.Value.Month+"-"+dtFecha.Value.Day;
                     co.aniosdeExperiencia = Convert.ToInt32(anioexp.Text.Trim());
+                    co.nombreUsuario= txtcorreo.Text.Trim().ToUpper();
+
+                    if (confirmarContrasenia(txtcontra, txtcontra2) == true)
+                    {
+                        co.contrasenia = txtcontra.Text.Trim();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Las contraseñas no coinciden");
+                    }
+
+                    co.direccion= txtdireccion.Text.Trim();
+
                     if (servicioConductor.Guardardb(co))
                     {
                         LlenarGrid();

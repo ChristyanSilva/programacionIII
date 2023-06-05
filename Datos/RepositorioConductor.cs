@@ -25,9 +25,10 @@ namespace Datos
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
                 // SQL Comando
-                string queryText = "INSERT INTO conductores (nombres, apellidos, " +
-                    "fechanacimiento, anioexp, nombreUsuario, contrasenia, cargo) VALUES ('" + c.nombre + "','" + c.apellido +
-                    "','" + c.fechaNacimiento + "'," + c.aniosdeExperiencia+ "'," + c.nombreUsuario + "','" + c.contrasenia + "','" + c.cargo + "')";
+                string queryText = "INSERT INTO conductores (nombres, apellidos," +
+                    "fechanacimiento, anioexp, nombreUsuario, contrasenia, direccion)" +
+                    " VALUES ('" + c.nombre + "','" + c.apellido +
+                    "','" + c.fechaNacimiento + "'," + c.aniosdeExperiencia+ ",'" + c.nombreUsuario + "','" + c.contrasenia + "','" + c.direccion + "')";
                 DbCommand newCommand = new SqlCommand(queryText);
                 newCommand.Connection = sqlServerConnection.dbConnection;
                 int cantidad = newCommand.ExecuteNonQuery();
@@ -88,7 +89,7 @@ namespace Datos
                         fechaNacimiento = dataReader["fechanacimiento"].ToString(),
                         nombreUsuario= dataReader["nombreUsuario"].ToString(),
                         contrasenia= dataReader["contrasenia"].ToString(),
-                        cargo= dataReader["cargo"].ToString()
+                        direccion= dataReader["direccion"].ToString()
                     };
                     ;
                     co.aniosdeExperiencia= Convert.ToInt32(dataReader["anioexp"].ToString());
@@ -109,7 +110,7 @@ namespace Datos
                 bool updatedOK = false;
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                string sql = "UPDATE conductores SET apellidos='" + c.apellido + "',fechanacimiento='" + c.fechaNacimiento + "',anioexp=" + c.aniosdeExperiencia + " WHERE nombres='" + c.nombre + "';";
+                string sql = "UPDATE conductores SET fechanacimiento='" + c.fechaNacimiento + "',anioexp=" + c.aniosdeExperiencia + "',direccion=" +c.direccion+" WHERE nombres='" + c.nombre + "'AND apellidos='" + c.apellido +"';";
 
                 SqlCommand comando = new SqlCommand(sql, sqlServerConnection.dbConnection);
                 int cantidad = comando.ExecuteNonQuery();

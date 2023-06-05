@@ -17,7 +17,8 @@ namespace Entidad
             this.aniosdeExperiencia= 0;
             this.nombreUsuario = "";
             this.contrasenia = "";
-            this.cargo = "";
+            this.direccion = "";
+            this.cargo = "Conductor";
         }
     }
 }

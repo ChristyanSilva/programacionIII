@@ -20,7 +20,8 @@ namespace Logica
             {
                 Conexion sqlServerConnection = new Conexion();
                 sqlServerConnection.Conectar();
-                string sql = "INSERT INTO vehiculo (marca,placa,aniosdeUso,tipoGasolina,kilometraje,estadodelVehiculo,conductorAsignado) VALUES ('" + v.marca + "','" + v.placa + "'," + v.aniosdeUso + ",'" + v.tipoGasolina + "',"+v.kilometraje+",'"+v.estadodelVehiculo+"',"+v.idConductorAsignado+")";
+                string sql = "INSERT INTO vehiculo (marca,placa,aniosdeUso,tipoGasolina,kilometraje,estadodelVehiculo,conductorAsignado) " +
+                    "VALUES ('" + v.marca + "','" + v.placa + "'," + v.aniosdeUso + ",'" + v.tipoGasolina + "',"+v.kilometraje+",'"+v.estadodelVehiculo+"',"+v.idConductorAsignado+")";
                 DbCommand newCommand = new SqlCommand(sql);
                 newCommand.Connection = sqlServerConnection.dbConnection;
                 int cantidad = newCommand.ExecuteNonQuery();

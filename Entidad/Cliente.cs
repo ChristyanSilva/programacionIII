@@ -8,7 +8,6 @@ namespace Entidad
 {
     public class Cliente: Persona
     {
-
         public Cliente()
         {
             this.nombre = "";
@@ -16,7 +15,8 @@ namespace Entidad
             this.fechaNacimiento = "";
             this.nombreUsuario = "";
             this.contrasenia = "";
-            this.cargo = "";
+            this.direccion = "";
+            this.cargo = "Cliente";
         }
     }
 }
